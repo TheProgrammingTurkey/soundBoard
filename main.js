@@ -8,7 +8,8 @@ const win = document.getElementById('6');
 const hockeySong = document.getElementById('7');
 const mice = document.getElementById('8');
 const nhl94 = document.getElementById('9');
-const stop = document.getElementById('10');
+const powerplay = document.getElementById('10');
+const stop = document.getElementById('11');
 
 
 cbjGoalHorn.addEventListener('click', () => {
@@ -53,6 +54,11 @@ mice.addEventListener('click', () => {
 
 nhl94.addEventListener('click', () => {
     audioPlayer.src = "sounds/nhl94.mp3";
+    audioPlayer.play();
+});
+
+powerplay.addEventListener('click', () => {
+    audioPlayer.src = "sounds/powerplay.mp3";
     audioPlayer.play();
 });
 
