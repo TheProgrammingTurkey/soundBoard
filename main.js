@@ -5,6 +5,9 @@ const bitOutside = document.getElementById('3');
 const birds = document.getElementById('4');
 const jeopardy = document.getElementById('5');
 const win = document.getElementById('6');
+const hockeySong = document.getElementById('7');
+const mice = document.getElementById('8');
+const stop = document.getElementById('9');
 
 
 cbjGoalHorn.addEventListener('click', () => {
@@ -35,4 +38,18 @@ jeopardy.addEventListener('click', () => {
 win.addEventListener('click', () => {
     audioPlayer.src = "sounds/win.mp3";
     audioPlayer.play();
+});
+
+hockeySong.addEventListener('click', () => {
+    audioPlayer.src = "sounds/hockeySong.mp3";
+    audioPlayer.play();
+});
+
+mice.addEventListener('click', () => {
+    audioPlayer.src = "sounds/mice.mp3";
+    audioPlayer.play();
+});
+
+stop.addEventListener('click', () => {
+    audioPlayer.pause();
 });
