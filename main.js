@@ -13,7 +13,8 @@ const mario = document.getElementById('11');
 const cartoonFall = document.getElementById('12');
 const espn = document.getElementById('13');
 const tnt = document.getElementById('14');
-const stop = document.getElementById('15');
+const nbc = document.getElementById('15');
+const stop = document.getElementById('16');
 
 
 cbjGoalHorn.addEventListener('click', () => {
@@ -83,6 +84,11 @@ espn.addEventListener('click', () => {
 
 tnt.addEventListener('click', () => {
     audioPlayer.src = "sounds/tnt.mp3";
+    audioPlayer.play();
+});
+
+nbc.addEventListener('click', () => {
+    audioPlayer.src = "sounds/nbc.mp3";
     audioPlayer.play();
 });
 
