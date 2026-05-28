@@ -18,9 +18,8 @@ const stop = document.getElementById('16');
 
 
 cbjGoalHorn.addEventListener('click', () => {
-    let num = Math.floor(Math.random()*3);
-    sounds = ["sounds/cbjGoalHorn.mp3", "sounds/bruinsGoal.mp3", "sounds/blackhawksGoal.mp3"];
-    audioPlayer.src = sounds[num];
+    let num = Math.floor(Math.random()*7);
+    audioPlayer.src = ["sounds/cbjGoalHorn.mp3", "sounds/bruinsGoal.mp3", "sounds/blackhawksGoal.mp3", "sounds/starsGoal.mp3", "sounds/lightningGoal.mp3", "penguinsGoal.mp3", "rangersGoal.mp3"][num];
     audioPlayer.play();
 });
 
