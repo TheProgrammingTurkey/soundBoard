@@ -14,12 +14,14 @@ const cartoonFall = document.getElementById('12');
 const espn = document.getElementById('13');
 const tnt = document.getElementById('14');
 const nbc = document.getElementById('15');
-const stop = document.getElementById('16');
+const machinehead = document.getElementById('16');
+const jokerAndTheThief = document.getElementById('17');
+const stop = document.getElementById('18');
 
 
 cbjGoalHorn.addEventListener('click', () => {
-    let num = Math.floor(Math.random()*12);
-    audioPlayer.src = ["sounds/cbjGoalHorn.mp3", "sounds/bruinsGoal.mp3", "sounds/blackhawksGoal.mp3", "sounds/starsGoal.mp3", "sounds/lightningGoal.mp3", "sounds/penguinsGoal.mp3", "sounds/rangersGoal.mp3", "sounds/krakenGoal.mp3", "sounds/flyersGoal.mp3", "sounds/avalancheGoal.mp3", "sounds/bluesGoal.mp3", "sounds/leafsGoal.mp3"][num];
+    let num = Math.floor(Math.random()*11);
+    audioPlayer.src = ["sounds/cbjGoalHorn.mp3", "sounds/bruinsGoal.mp3", "sounds/blackhawksGoal.mp3", "sounds/starsGoal.mp3", "sounds/lightningGoal.mp3", "sounds/rangersGoal.mp3", "sounds/krakenGoal.mp3", "sounds/flyersGoal.mp3", "sounds/avalancheGoal.mp3", "sounds/bluesGoal.mp3", "sounds/leafsGoal.mp3"][num];
     audioPlayer.play();
 });
 
@@ -93,6 +95,15 @@ nbc.addEventListener('click', () => {
     audioPlayer.play();
 });
 
+machinehead.addEventListener('click', () => {
+    audioPlayer.src = "sounds/machinehead.mp3";
+    audioPlayer.play();
+});
+
+jokerAndTheThief.addEventListener('click', () => {
+    audioPlayer.src = "sounds/jokerAndTheThief.mp3";
+    audioPlayer.play();
+});
 
 stop.addEventListener('click', () => {
     audioPlayer.pause();
