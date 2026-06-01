@@ -1,3 +1,4 @@
+const information = document.getElementById('info');
 const audioPlayer = document.getElementById('audioPlayer');
 const cbjGoalHorn = document.getElementById('1');
 const weLikePizza = document.getElementById('2');
@@ -17,6 +18,14 @@ const nbc = document.getElementById('15');
 const machinehead = document.getElementById('16');
 const jokerAndTheThief = document.getElementById('17');
 const stop = document.getElementById('18');
+
+function showInfo() {
+    information.style.display = 'block';
+}
+
+function hideInfo() {
+    information.style.display = 'none';
+}
 
 
 cbjGoalHorn.addEventListener('click', () => {
