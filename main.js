@@ -2,22 +2,20 @@ const information = document.getElementById('info');
 const audioPlayer = document.getElementById('audioPlayer');
 const cbjGoalHorn = document.getElementById('1');
 const weLikePizza = document.getElementById('2');
-const bitOutside = document.getElementById('3');
-const birds = document.getElementById('4');
-const jeopardy = document.getElementById('5');
-const win = document.getElementById('6');
-const hockeySong = document.getElementById('7');
-const mice = document.getElementById('8');
-const nhl94 = document.getElementById('9');
-const powerplay = document.getElementById('10');
-const mario = document.getElementById('11');
-const cartoonFall = document.getElementById('12');
-const espn = document.getElementById('13');
-const tnt = document.getElementById('14');
-const nbc = document.getElementById('15');
-const machinehead = document.getElementById('16');
-const jokerAndTheThief = document.getElementById('17');
-const stop = document.getElementById('18');
+const jeopardy = document.getElementById('3');
+const win = document.getElementById('4');
+const hockeySong = document.getElementById('5');
+const mice = document.getElementById('6');
+const nhl94 = document.getElementById('7');
+const powerplay = document.getElementById('8');
+const mario = document.getElementById('9');
+const cartoonFall = document.getElementById('10');
+const espn = document.getElementById('11');
+const tnt = document.getElementById('12');
+const nbc = document.getElementById('13');
+const machinehead = document.getElementById('14');
+const jokerAndTheThief = document.getElementById('15');
+const stop = document.getElementById('16');
 
 function showInfo() {
     information.style.display = 'block';
@@ -36,16 +34,6 @@ cbjGoalHorn.addEventListener('click', () => {
 
 weLikePizza.addEventListener('click', () => {
     audioPlayer.src = "sounds/weLikePizza.mp3";
-    audioPlayer.play();
-});
-
-bitOutside.addEventListener('click', () => {
-    audioPlayer.src = "sounds/bitOutside.mp3";
-    audioPlayer.play();
-});
-
-birds.addEventListener('click', () => {
-    audioPlayer.src = "sounds/birds.mp3";
     audioPlayer.play();
 });
 
